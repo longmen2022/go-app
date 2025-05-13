@@ -34,5 +34,5 @@ jobs:
       - name: Delete Old Container
         run: docker rm -f go-app-container || true  # Prevent errors if container doesn't exist
 
-      - name: Run Docker Container
-        run: docker run -d -p 4040:4040 --name go-app-container lmen776/go-app
+      - name: Run Docker Containers 
+        run: docker run -d -p 4040:4040 --name go-app-container lmen776/go-app 
