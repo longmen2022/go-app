@@ -29,7 +29,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Pull Docker Image
-        run: docker pull lmen776/go-app:latest
+        run: sudo docker pull lmen776/go-app:latest
 
       - name: Delete Old Container
         run: docker rm -f go-app-container || true  # Prevent errors if container doesn't exist
